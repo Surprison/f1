@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.theme-toggle {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.theme-toggle:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark .header-container {
+    background-color: #111;
+}
+
+body.dark .nav-item a {
+    color: #eee;
+}
+
+body.dark .nav-item a:hover {
+    background-color: #444;
+}
+
+body.dark .theme-toggle {
+    background-color: #666;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;
+}
+
+body.dark .site-footer {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark .footer-links ul li a:hover {
+    color: #ddd;
+}
+
+body.dark .footer-social a {
+    color: #ddd;
+}
+
+
+
+.main-rules {
+    padding: 30px;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 20px;
+    border-left: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.main-rules h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+body.dark .main-rules {
+    background-color: #444;
+    border-color: #ddd;
+}
+
+body.dark .main-rules h2, 
+body.dark .main-rules h3,
+body.dark .main-rules p, 
+body.dark .main-rules ul, 
+body.dark .main-rules li, 
+body.dark .main-rules strong {
+    color: #fff;
+}
+
+
+.rule-changes {
+    padding: 30px;
+    background-color: #e8f5e9;
+    color: #333;
+    margin: 20px;
+    border-right: 5px solid #388e3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.changes-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.rule-changes h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+body.dark .rule-changes {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+body.dark .rule-changes h2, 
+body.dark .rule-changes h3,
+body.dark .rule-changes p, 
+body.dark .rule-changes ul, 
+body.dark .rule-changes li, 
+body.dark .rule-changes strong {
+    color: #fff;
+}
+
+/* Секция Технический регламент */
+.technical-regulations {
+    padding: 30px;
+    background-color: #fff8e1;
+    color: #333;
+    margin: 20px;
+    border-top: 5px solid #ffb300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.regulations-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.technical-regulations h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffb300;
+    margin-bottom: 20px;
+}
+
+body.dark .technical-regulations {
+    background-color: #3e2723;
+    border-color: #ffcc80;
+}
+
+body.dark .technical-regulations h2, 
+body.dark .technical-regulations h3,
+body.dark .technical-regulations p, 
+body.dark .technical-regulations ul, 
+body.dark .technical-regulations li, 
+body.dark .technical-regulations strong {
+    color: #fff;
+}

@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.theme-toggle {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.theme-toggle:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark .header-container {
+    background-color: #111;
+}
+
+body.dark .nav-item a {
+    color: #eee;
+}
+
+body.dark .nav-item a:hover {
+    background-color: #444;
+}
+
+body.dark .theme-toggle {
+    background-color: #666;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;
+}
+
+body.dark .site-footer {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark .footer-links ul li a:hover {
+    color: #ddd;
+}
+
+body.dark .footer-social a {
+    color: #ddd;
+}
+
+
+
+.car-construction {
+    padding: 30px;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 20px;
+    border-left: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.construction-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.car-construction h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.car-construction h2 img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+
+.tech-innovations {
+    padding: 30px;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 20px;
+    border-right: 5px solid #00796b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.innovations-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.tech-innovations h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.tech-innovations h2 img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+
+.tires-suspension {
+    padding: 30px;
+    background-color: #fffde7;
+    color: #333;
+    margin: 20px;
+    border-top: 5px solid #f57f17;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tires-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.tires-suspension h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #f57f17;
+    margin-bottom: 20px;
+}
+
+.tires-suspension h2 img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.technics p, .technics h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+body.dark .car-construction {
+    background-color: #444;
+    border-color: #ddd;
+}
+
+body.dark .car-construction h2 {
+    color: #ddd;
+}
+
+body.dark .car-construction h3 {
+    color: #ddd;
+}
+
+body.dark .tech-innovations {
+    background-color: #004d40;
+    border-color: #004d40;
+}
+
+body.dark .tech-innovations h2 {
+    color: #b2dfdb;
+}
+
+body.dark .tech-innovations h3 {
+    color: #b2dfdb;
+}
+
+body.dark .tires-suspension {
+    background-color: #3e2723;
+    border-color: #ffcc80;
+}
+
+body.dark .tires-suspension h2 {
+    color: #ffcc80;
+}
+
+body.dark .tires-suspension h3 {
+    color: #ffcc80;
+}
+
+body.dark p {
+    color: #fff;
+}
